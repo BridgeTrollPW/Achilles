@@ -1,4 +1,4 @@
-package net.gat3way.achilles.ui;
+package net.gat3way.achilles.ui.frontend.startup.control;
 
 import java.io.File;
 import java.io.IOException;
@@ -21,6 +21,7 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Modality;
 import net.gat3way.achilles.crypt.VaultUtillity;
 import net.gat3way.achilles.crypt.entity.Vault;
+import net.gat3way.achilles.ui.App;
 
 public class RegistrationController {
     @FXML
@@ -40,9 +41,10 @@ public class RegistrationController {
             Alert alert = new Alert(AlertType.CONFIRMATION);
             alert.setTitle("Confirmation Dialog");
             alert.setHeaderText(
-                    "A vault with your personal accounts already exists! If you register a new account you will overwrite your current settings and loose all your local data.");
+                    "A vault with your personal accounts already exists!\nIf you register a new account you will overwrite your current settings and loose all your local data.");
             alert.setContentText("Are you sure you want to erase and create a new profile?");
             alert.initModality(Modality.APPLICATION_MODAL);
+
             Optional<ButtonType> result = alert.showAndWait();
             if (result.get() != ButtonType.OK) {
                 App.setRoot("login");
@@ -51,7 +53,6 @@ public class RegistrationController {
         }
         App.setRoot("loading");
         new Thread(() -> {
-            // TODO Auto-generated method stub
             Vault vault = new Vault();
             vault.setProfileName(userTextField.getText());
             try {
@@ -59,7 +60,6 @@ public class RegistrationController {
             } catch (InvalidKeyException | NoSuchAlgorithmException | InvalidKeySpecException | NoSuchPaddingException
                     | InvalidAlgorithmParameterException | IllegalBlockSizeException | IOException
                     | BadPaddingException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
             System.out.println("done");
