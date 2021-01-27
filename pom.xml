@@ -20,8 +20,6 @@
         <skipFeatureVersion>true</skipFeatureVersion>
         <!--Incremet versioning in feature development-->
         <incrementVersionAtFinish>true</incrementVersionAtFinish>
-        <!--Create Minor Release versions by default-->
-        <versionDigitToIncrement>1</versionDigitToIncrement>
     </properties>
 
     <profiles>
