@@ -13,5 +13,6 @@
    </children>
    <cursor>
       <Cursor fx:constant="WAIT" />
-   </cursor>
+      
+   </cursor> 
 </VBox>
