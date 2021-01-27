@@ -5,11 +5,11 @@
     <parent>
         <artifactId>achilles</artifactId>
         <groupId>net.gat3way</groupId>
-        <version>1.1</version>
+        <version>1.2-SNAPSHOT</version>
     </parent>
     <groupId>net.gat3way.achilles</groupId>
     <artifactId>ui</artifactId>
-    <version>1.1</version>
+    <version>1.2-SNAPSHOT</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
@@ -29,7 +29,7 @@
         <dependency>
             <groupId>net.gat3way.achilles</groupId>
             <artifactId>crypt</artifactId>
-            <version>1.1</version>
+            <version>1.2-SNAPSHOT</version>
         </dependency>
     </dependencies>
     <build>
