@@ -75,6 +75,7 @@
                         <productionBranch>master</productionBranch>
                         <developmentBranch>sprint-current</developmentBranch>
                         <featureBranchPrefix>ta-tools-</featureBranchPrefix>
+                        <releaseBranchPrefix>release-</releaseBranchPrefix>
                         <hotfixBranchPrefix>ah-</hotfixBranchPrefix>
                     </gitFlowConfig>
                     <skipFeatureVersion>true</skipFeatureVersion>
