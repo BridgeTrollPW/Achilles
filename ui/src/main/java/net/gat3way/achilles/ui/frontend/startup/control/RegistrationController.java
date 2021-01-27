@@ -51,7 +51,7 @@ public class RegistrationController {
                 return;
             }
         }
-        App.setRoot("loading");
+        App.setRoot("frontend/loading");
         new Thread(() -> {
             Vault vault = new Vault();
             vault.setProfileName(userTextField.getText());

@@ -1,0 +1,11 @@
+root{ 
+    -fx-background-color: #e9eef3;
+}
+
+VBox {
+    -fx-background-color: #e9eef3;
+}
+
+Button{
+    -fx-background-color: #c0cfdf;
+}
