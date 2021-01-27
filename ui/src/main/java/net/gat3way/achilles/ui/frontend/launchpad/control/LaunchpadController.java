@@ -5,4 +5,6 @@ import org.apache.logging.log4j.Logger;
 
 public class LaunchpadController {
     private static final Logger LOG = LogManager.getLogger(LaunchpadController.class);
+
+    public LaunchpadController(){}
 }
