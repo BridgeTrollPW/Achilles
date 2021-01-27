@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.gat3way</groupId>
     <artifactId>achilles</artifactId>
-    <version>1.2</version>
+    <version>1.3-SNAPSHOT</version>
     <name>achilles</name>
     <packaging>pom</packaging>
 
