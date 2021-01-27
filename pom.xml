@@ -19,7 +19,7 @@
         <!--Disable adding a featurename to the version-->
         <skipFeatureVersion>true</skipFeatureVersion>
         <!--Incremet versioning in feature development-->
-        <incrementVersionAtFinish>true</incrementVersionAtFinish>
+        <incrementVersionAtFinish>false</incrementVersionAtFinish>
     </properties>
 
     <profiles>
