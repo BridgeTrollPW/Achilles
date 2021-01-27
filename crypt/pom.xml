@@ -5,12 +5,12 @@
     <parent>
         <artifactId>achilles</artifactId>
         <groupId>net.gat3way</groupId>
-        <version>2.6.0</version>
+        <version>3.0.0-SNAPSHOT</version>
     </parent>
 
     <groupId>net.gat3way.achilles</groupId>
     <artifactId>crypt</artifactId>
-    <version>2.6.0</version>
+    <version>3.0.0-SNAPSHOT</version>
     <name>crypt</name>
     <packaging>jar</packaging>
 
