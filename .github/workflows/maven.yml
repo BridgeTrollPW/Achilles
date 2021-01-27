@@ -5,9 +5,9 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ master ]
+    branches: [ integration ]
   pull_request:
-    branches: [ master ]
+    branches: [ integration ]
 
 jobs:
   build:
@@ -21,4 +21,4 @@ jobs:
       with:
         java-version: 11
     - name: Build with Maven
-      run: mvn -B clean install package --file pom.xml
+      run: mvn -B clean install test --file pom.xml
