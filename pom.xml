@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.gat3way</groupId>
     <artifactId>achilles</artifactId>
-    <version>2.2</version>
+    <version>2.3</version>
     <name>achilles</name>
     <packaging>pom</packaging>
 
@@ -75,6 +75,7 @@
                         <productionBranch>master</productionBranch>
                         <developmentBranch>sprint-current</developmentBranch>
                         <featureBranchPrefix>ta-tools-</featureBranchPrefix>
+                        <releaseBranchPrefix>release-</releaseBranchPrefix>
                         <hotfixBranchPrefix>ah-</hotfixBranchPrefix>
                     </gitFlowConfig>
                     <skipFeatureVersion>true</skipFeatureVersion>
