@@ -12,7 +12,7 @@
    <children>
       <Label text="Login" />
       <TextField promptText="User" />
-      <PasswordField fx:id="passwordTextField" />
+      <PasswordField fx:id="passwordTextField" promptText="Password" />
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
          <children>
             <Button fx:id="registerButton" onAction="#onRegisterButtonPressed" text="Register" textAlignment="CENTER" />
