@@ -3,15 +3,10 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>net.gat3way</groupId>
-
     <artifactId>achilles</artifactId>
-
     <version>1.2-SNAPSHOT</version>
-
     <name>achilles</name>
-
     <packaging>pom</packaging>
 
     <modules>
@@ -21,8 +16,36 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!--Disable adding a featurename to the version-->
         <skipFeatureVersion>true</skipFeatureVersion>
+        <!--Incremet versioning in feature development-->
+        <incrementVersionAtFinish>true</incrementVersionAtFinish>
+        <!--Create Minor Release versions by default-->
+        <versionDigitToIncrement>1</versionDigitToIncrement>
     </properties>
+
+    <profiles>
+        <profile>
+            <id>release-patch</id>
+            <properties>
+                <versionDigitToIncrement>2</versionDigitToIncrement>
+            </properties>
+        </profile>
+        <profile>
+            <id>release-minor</id>
+            <properties>
+                <versionDigitToIncrement>1</versionDigitToIncrement>
+            </properties>
+        </profile>
+        <profile>
+            <id>release-major</id>
+            <properties>
+                <versionDigitToIncrement>0</versionDigitToIncrement>
+            </properties>
+        </profile>
+    </profiles>
+
+
 
     <dependencies>
         <dependency>
