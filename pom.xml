@@ -52,7 +52,10 @@
                     <gitFlowConfig>
                         <productionBranch>master</productionBranch>
                         <developmentBranch>sprint-current</developmentBranch>
+                        <featureBranchPrefix>ta-tools-</featureBranchPrefix>
+                        <hotfixBranchPrefix>ah-</hotfixBranchPrefix>
                     </gitFlowConfig>
+                    <skipFeatureVersion>true</skipFeatureVersion>
                 </configuration>
             </plugin>
         </plugins>
